@@ -1,0 +1,10 @@
+server:
+       port: 8081
+       context-path: /SpringBoot
+cupSize: F
+age: 18
+content: "cup size is ${cupSize}, age is ${age}"
+
+boy:
+    sex : male
+    hobby: football

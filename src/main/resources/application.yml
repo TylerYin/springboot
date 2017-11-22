@@ -1,0 +1,4 @@
+#通过下面的配置可以指定在项目启动时使用哪个配置文件。
+spring:
+  profiles:
+    active: dev
