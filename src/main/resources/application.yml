@@ -1,4 +1,16 @@
 #通过下面的配置可以指定在项目启动时使用哪个配置文件。
+#在这个全局配置文件中配置的参数，会应用在其它的配置文件上，如在dev和prod上。
 spring:
   profiles:
     active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/dbgirl
+    username: root
+    password: yjf090214
+  jpa:
+    hibernate:
+      #create在每次应用启动时，都会删除老的数据库然后再创建新的数据库；
+      #update是在应用启动时，如果数据库中没有相应的表，也会创建新表，但是如果表中有数据，则不会删除数据
+      ddl-auto: update
+    show-sql: true
