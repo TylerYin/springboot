@@ -1,12 +1,15 @@
-package com.springboot.springboot;
+package com.springboot.springboot.controller;
 
+import com.springboot.springboot.bean.Girl;
+import com.springboot.springboot.dao.GirlRepository;
+import com.springboot.springboot.service.GirlService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 /**
- * @Description Girl Controller
+ * @Description Girl controller
  * @Author Tyler Yin
  * @Create 2017-11-24 22:08
  **/

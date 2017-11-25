@@ -14,3 +14,5 @@ spring:
       #update是在应用启动时，如果数据库中没有相应的表，也会创建新表，但是如果表中有数据，则不会删除数据
       ddl-auto: update
     show-sql: true
+mybatis:
+  mapper-locations: classpath:mybatis/*.xml

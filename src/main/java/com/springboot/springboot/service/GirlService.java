@@ -1,5 +1,7 @@
-package com.springboot.springboot;
+package com.springboot.springboot.service;
 
+import com.springboot.springboot.bean.Girl;
+import com.springboot.springboot.dao.GirlRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
