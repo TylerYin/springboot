@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<properties>
+		<!-- 文件输出格式 -->
+		<property name="LOG_HOME">G:\BEYOND\ws\SpringBoot</property>
+		<property name="PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} |-%-5level [%thread] %c [%L] -| %msg%n</property>
+		<property name="FORMAT">%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level >>> %logger{36} - %msg%n</property>
+	</properties>
+
+	<appenders>
+		<console name="console" target="system_out">
+			<patternLayout pattern="${PATTERN}" />
+		</console>
+		<file name="file" fileName="${LOG_HOME}/demo.log" append="false">
+			<patternLayout pattern="${FORMAT}" />
+		</file>
+	</appenders>
+
+	<loggers>
+		<logger name="com.springboot.springboot.controller" level="info" />
+		<root level="debug">
+			<appenderref ref="console" />
+			<appender-ref ref="file" />
+		</root>
+	</loggers>
+
+</configuration>
