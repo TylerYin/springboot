@@ -18,5 +18,9 @@ spring:
     type: ehcache
     ehcache:
       config: classpath:config/ehcache.xml
+  mvc:
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
 mybatis:
   mapper-locations: classpath:mybatis/*.xml

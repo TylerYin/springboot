@@ -17,7 +17,7 @@
 	</appenders>
 
 	<loggers>
-		<logger name="com.springboot.springboot.controller" level="info" />
+		<logger name="com.springboot.springboot.controller" level="debug" />
 		<root level="debug">
 			<appenderref ref="console" />
 			<appender-ref ref="file" />
