@@ -13,4 +13,10 @@ spring:
       #create在每次应用启动时，都会删除老的数据库然后再创建新的数据库；
       #update是在应用启动时，如果数据库中没有相应的表，也会创建新表，但是如果表中有数据，则不会删除数据
       ddl-auto: update
-    show-sql: true
+      show-sql: true
+  cache:
+    type: ehcache
+    ehcache:
+      config: classpath:config/ehcache.xml
+mybatis:
+  mapper-locations: classpath:mybatis/*.xml

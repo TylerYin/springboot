@@ -5,6 +5,9 @@ cupSize: F
 age: 18
 content: "cup size is ${cupSize}, age is ${age}"
 
+logging:
+ config: classpath:log4j2-prod.xml
+
 boy:
     sex : male
     hobby: football

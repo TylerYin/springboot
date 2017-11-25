@@ -1,5 +1,6 @@
-package com.springboot.springboot;
+package com.springboot.springboot.dao;
 
+import com.springboot.springboot.bean.Girl;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
